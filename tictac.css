@@ -1,0 +1,96 @@
+
+#board {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+h2 {
+
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+hr {
+	width: 50%;
+	height: 3px;
+	background-color: darkslategray;
+}
+.cell {
+	border: 1px solid blue;
+	width: 75px;
+	height: 75px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+	
+}
+
+.cell:first-child,
+ .cell:nth-child(2),
+ .cell:nth-child(3) {
+     border-top: none;
+ }
+
+ .cell:nth-child(1),
+ .cell:nth-child(4),
+ .cell:nth-child(7) {
+     border-left: none;
+ }
+
+ .cell:nth-child(3),
+ .cell:nth-child(6),
+ .cell:nth-child(9) {
+     border-right: none;
+ }
+
+ .cell:nth-child(7),
+ .cell:nth-child(8),
+ .cell:last-child {
+     border-bottom: none;
+ }
+
+ .x::after {
+    content: 'X';
+	color: darkorchid;
+}
+
+.circle::after {
+    content: 'O';
+	color: darkcyan;
+}
+
+.winningMessage {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(0 0 0 / 50%) 0 0 0 9999px;
+	
+}
+
+#winningMessageText {
+    position: absolute;
+    top: -200px;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transform: translateX(-30%);
+}
+
+/* .visible {
+    display: block;
+} */
+
+#restartButton {
+	text-align: center;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictac.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+    <h2>Tic Tac Toe</h2>
+    <hr>
+    <div id="whoseTurn"></div>
+    <div id="board">
+        <div class="cell" data-cell="0"></div>
+        <div class="cell" data-cell="1"></div>
+        <div class="cell" data-cell="2"></div>
+        <div class="cell" data-cell="3"></div>
+        <div class="cell" data-cell="4"></div>
+        <div class="cell" data-cell="5"></div>
+        <div class="cell" data-cell="6"></div>
+        <div class="cell" data-cell="7"></div>
+        <div class="cell" data-cell="8"></div>
+    </div>
+       <div class="winning-message" id="winningMessage"> 
+        <span data-winning-message-text></span>
+        <button id="restartButton">Restart Game</button>
+    </div>
+</div>
+
+
+<!-- <br>
+<div class="alert alert-info alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div> -->
+    <!-- <div class="winning-message" id="winningMessage"> 
+        <span id='winningMessageText'></span>
+        <button id="restartButton">Restart Game</button>
+    </div> -->
+    <!-- text-align: center;
+    margin-top: 17rem; -->
+       
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="tictac.js"></script>
+
+</body>
+</html>
+
+
