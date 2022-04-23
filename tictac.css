@@ -7,23 +7,9 @@
 	display: grid;
 	grid-template-columns: repeat(3, auto);
 }
-.container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
-}
-h2 {
-
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-hr {
-	width: 50%;
-	height: 3px;
-	background-color: darkslategray;
-}
 .cell {
-	border: 1px solid blue;
+	border: 1px solid rgb(30, 168, 111);
 	width: 75px;
 	height: 75px;
 	display: flex;
@@ -64,33 +50,5 @@ hr {
 
 .circle::after {
     content: 'O';
-	color: darkcyan;
-}
-
-.winningMessage {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: rgb(0 0 0 / 50%) 0 0 0 9999px;
-	
-}
-
-#winningMessageText {
-    position: absolute;
-    top: -200px;
-    font-size: 60px;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
-    transform: translateX(-30%);
-}
-
-/* .visible {
-    display: block;
-} */
-
-#restartButton {
-	text-align: center;
+	color: rgb(82, 179, 179);
 }
